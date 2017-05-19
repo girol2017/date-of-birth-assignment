@@ -1,0 +1,12 @@
+import calendar
+age = int(input ('Age: '))
+month = int (input('Month of birth (1-12): '))
+Date = int (input ('Date of birth (1-32): '))
+Current_year = int (input ('Current Year: '))
+year = Current_year - age
+day = calendar.weekday(year, month, Date)
+day_string = calendar.day_name[day]
+the_month = calendar.month(year, month)
+month_string = calendar.month_name[month]
+print ('Hello! user, you were born on a ' + day_string + ', ' + month_string + ' in the year '  + str (year))
+print('thanks you!')
